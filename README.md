@@ -14,7 +14,7 @@ web simple belajar python berbahasa indonesia, support mobile dan pc, mungkin tu
 dan untuk cara menggunaannya mudah kok, cukup ikuti petunjuk dibawah
 
 ```
-1.download web nya
+1.download file web nya
 2.extrak
 3.buka di browser
 4.selamat belajar
