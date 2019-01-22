@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Ropa+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <title>mengambil input dan menghasilkan output</title>
+    <!-- syntak -->
+    <link rel="stylesheet" href="/path/to/styles/default.css">
+    <script src="/path/to/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a href="#" class="navbar-brand">try exception</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="../daftar.html" class="nav-link btn btn-outline-primary bad-daftar">kembali ke daftar tutorial</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="kolom-tut">
+      <h3 class="judul-tutorial">memahami try exception</h3>
+      <p class="isi-tutorialnya">
+        apa itu try..except di python? <garis>try..except adalah fungsi untuk penanganan error pada code (exception handling) <garis>logikanya:
+        <p><img src="img/try_exception_ex.png" alt="" class="gambar-tutorial"></p>
+      </p>
+      <p class="isi-tutorialnya">contoh dalam program:</p>
+      <pre><code>
+  <sintakvar>try</sintakvar>:
+    <komentar># jalankan code ini...</komentar>
+  <sintakvar>except</sintakvar>:
+    <komentar># jalankan ini ketika ada pengecualian/error</komentar>
+      </code></pre>
+      <p class="isi-tutorialnya">Paham gak? <garis>kalau belum paham mari kita coba, buat file baru bernama <sukron>latihan.py</sukron> dan ikuti kode ini</p>
+      <pre><code>
+  <sintakvar>try</sintakvar>:
+      <sintakbawaan>print</sintakbawaan> hello
+  <sintakvar>except</sintakvar>:
+      <sintakbawaan>print</sintakbawaan><string> "kode error!"</string>
+      </code></pre>
+      <p class="isi-tutorialnya">ini sebenarnya agak bodoh, hehe... kenapa?<span>karena kita mencetak variabel <khususon>hello</khususon> sedangkan kita tidak mempunyai variabel <khususon>hello,</span><garis>tentu ini akan error.</khususon><garis>tapi gak papa ini hanya untuk pembelajaran<garis>kalau jalankan maka akan masuk kebagian <khususon>except</khususon> dan akan menampilkan pesan <khususon>"kode error!"</khususon>
+        <p><img src="img/error_run.png" alt="" class="gambar-tutorial"></p>
+      </p>
+      <p class="isi-tutorialnya">tapi, bagaimana jika kodenya banyak? sedangkan kita tidak tahu di bagian mana ada error...<garis>tinggal gunakan fungsi <khususon>Exception</khususon><garis>Contoh:</p>
+        <pre><code>
+  <sintakvar>try</sintakvar>:
+      <sintakbawaan>print</sintakbawaan> hello
+  <sintakvar>except </sintakvar><sintakbawaan>Exception </sintakbawaan><sintakvar>as </sintakvar>errornya:
+      <sintakbawaan>print</sintakbawaan><string> "Error bagian: "</string><sintakvar> +</sintakvar> <sintakbawaan>str</sintakbawaan>(errornya)
+        </code></pre>
+        <p class="isi-tutorialnya">Hasilnya:
+          <p><img src="img/exception_run.png" alt="" class="gambar-tutorial"></p>
+        </p>
+        <p class="isi-tutorialnya">oke, sekian pembelajaran try..excention, semoga kamu sudah mengerti<garis>sebenarnya masih banyak yang belum dibahas tentang try..excention di python <span>berhubung saya sudah terlalu lelah membuat ini, sendiri aja lagi :D<garis>jika ingin mempelajari lebih tentang try..exception bisa lihat dokumentasinya <a href="https://docs.python.org/3/tutorial/errors.html">disini</a></p>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Ropa+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <title>mengambil input dan menghasilkan output</title>
+    <!-- syntak -->
+    <link rel="stylesheet" href="/path/to/styles/default.css">
+    <script src="/path/to/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a href="#" class="navbar-brand">Belajar Python</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="../daftar.html" class="nav-link btn btn-outline-primary bad-daftar">kembali ke daftar tutorial</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="kolom-tut">
+      <h3 class="judul-tutorial">mengambil input dan menghasilkan output</h3>
+      <p class="isi-tutorialnya">
+        skrg kita akan belajar bagaimana cara mengambil input dan menghasilkan output di python. <garis>
+        sebelumnya saya akan jelaskan, apa itu input? <garis>input adalah masukan yang kita berikan kepada program <span>sedangkan output adalah hasil yang kita ambil dari input tersebut
+        <p>
+          <img src="img/input-output.png" alt="" class="gambar-tutorial">
+        </p>
+        <h4 class="judul-tutorial">mengambil input dari keyboard</h4>
+      </p>
+      <p class="isi-tutorialnya">
+        python sudah menyediakan fungsi <khususon>raw_input</khususon> dan <khususon>input</khususon> <span>
+        untuk mengambil inputan dari keyboard. <span>
+        lalu apa bedanya dari kedua fungsi tersebut?, kita bahas semuanya <garis>fungsi <khususon>raw_input</khususon> digunakan untuk <span>
+        mengambil inputan dari keyboard yang ber type data text (string), <garis>sedangkan fungsi <khususon>input</khususon> digunakan untuk <span>mengambil inputan dari keyboard yang ber type data angka (integer)
+        <garis>Contoh penggunaan:
+          <pre>
+            <code>
+  nama <sintakvar>=</sintakvar><sintakbawaan> raw_input</sintakbawaan>(<string>"siapa nama kamu?: "</string>)
+  umur <sintakvar>=</sintakvar><sintakbawaan> input</sintakbawaan>(<string>"berapa umur kamu?: "</string>)</code>
+          </pre>
+      </p>
+      <p class="isi-tutorialnya">
+        yang artinya hasil inputan untuk nama akan disimpan kedalam variabel <khususon>nama</khususon> <span>
+        sedangkan untuk inputan umur akan disimpan kedalam variabel <khususon>umur</khususon> <garis>biar lebih jelas silahkan buat file baru bernama <sukron>belajar_input_output.py</sukron> <span>dan ikuti kode berikut:
+        <pre>
+          <code>
+  <komentar># mengambil input</komentar>
+  nama <sintakvar>=</sintakvar> <sintakbawaan>raw_input</sintakbawaan>(</span>"siapa nama kamu?: "</garis>)
+  umur <sintakvar>=</sintakvar> <sintakbawaan>input</sintakbawaan>(<string>"berapa umur kamu?: "</string>)
+
+  <komentar># menampilkan output</komentar>
+  <sintakbawaan>print</sintakbawaan> nama
+  <sintakbawaan>print</sintakbawaan> umur</code>
+        </pre>
+      </p><p class="isi-tutorialnya">Hasilnya
+        <p>
+          <img src="img/input_latihan.png" alt="" class="gambar-tutorial">
+        </p>
+        <h4 class="judul-tutorial">menggunakan fungsi format()</h4>
+      </p>
+      <p class="isi-tutorialnya">
+        fungsi <khususon>format()</khususon> untuk menggabungkan variabel dengan text. <garis>
+        biar lebih jelas mari kita coba. <span>
+        silahkan modifikasi file yang tadi dibuat, sehingga menjadi seperti ini
+        <pre>
+          <code>
+  nama <sintakvar>=</sintakvar><sintakbawaan> raw_input</sintakbawaan>(<string>"siapa nama kamu?: "</string>)
+
+  <sintakbawaan>print</sintakbawaan><string> "selamat datang: </string><intiger>{}</intiger><string>"</string>.<sintakbawaan>format</sintakbawaan>(nama)</code>
+        </pre>
+      </p>
+      <p class="isi-tutorialnya">Hasilnya
+        <p>
+          <img src="img/hasil_format.png" alt="" class="gambar-tutorial">
+        </p>
+        <h4 class="judul-tutorial">menggunakan cara lama</h4>
+      </p>
+      <p class="isi-tutorialnya">
+        menggabungkan variabel dengan text menggunakan cara lama dengan simbol persen (<khususon>%</khususon>) <garis>Contoh:
+        <pre>
+          <code>
+  nama <sintakvar>=</sintakvar><sintakbawaan> raw_input</sintakbawaan>(<string>"siapa nama kamu?: "</string>)
+  
+  <sintakbawaan>print</sintakbawaan><string> "selamat datang: </string><intiger>%s</intiger><string>"</string><sintakvar> %</sintakvar> nama
+          </code></pre>
+      </p>
+      <p class="isi-tutorialnya">
+        tanda <khususon>%s</khususon> otomatis akan diganti dengan nilai yang kita inputkan kedalam variabel <khususon>nama</khususon>.
+        biar lebih mantap mari kita latihan lagi. <span>buat file baru bernama <sukron>latihan_input_output.py</sukron> dan ikuti kode berikut:
+        <pre>
+          <code>
+  nama <sintakvar>=</sintakvar><sintakbawaan> raw_input</sintakbawaan>(<string>"siapa nama kamu?: "</string>)
+  umur <sintakvar>=</sintakvar><sintakbawaan> input</sintakbawaan>(<string>"berapa umur kamu?: "</string>)
+  
+  <sintakbawaan>print</sintakbawaan><string> "="</string><sintakvar>*</sintakvar><intiger>5</intiger>
+  <sintakbawaan>print</sintakbawaan><string> "hello</string><intiger> %s</intiger><string> selamat datang di tutorial python."</string><sintakvar> %</sintakvar> nama
+  <sintakbawaan>print</sintakbawaan><string> "umur kamu adalah </string><intiger>%d</intiger><string> tahun"</string><sintakvar> %</sintakvar> umur
+          </code></pre>
+      </p>
+      <p class="isi-tutorialnya">Hasilnya
+        <p>
+          <img src="img/latihan_persen.png" alt="" class="gambar-tutorial">
+        </p>
+      </p>
+      <p class="isi-tutorialnya">
+        mengapa ada tanda <khususon>%d</khususon> dan <khususon>%s</khususon> disitu?, lalu apa bedanya? <garis>
+        tanda <khususon>%d</khususon> digunakan untuk menampilkan type data angka(integer), dan untuk tanda <khususon>%s</khususon> <span>
+        digunakan untuk menampilkan type data text(string). <garis>sekian pelajaran tentang input dan output, semoga sudah paham <span>
+        dan silahkan pelajari tutorial selanjutnya. <garis>
+        <a href="operator.html" class="btn btn-primary lj">Lanjut</a>
+      </p>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  </body>
+</html>

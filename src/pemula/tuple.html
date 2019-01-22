@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Ropa+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <title>python tuple</title>
+    <!-- syntak -->
+    <link rel="stylesheet" href="/path/to/styles/default.css">
+    <script src="/path/to/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a href="#" class="navbar-brand">Belajar Python</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="../daftar.html" class="nav-link btn btn-outline-primary bad-daftar">kembali ke daftar tutorial</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="kolom-tut">
+      <h3 class="judul-tutorial">python tuple</h3>
+      <p class="isi-tutorialnya">
+        apa itu tuple? <garis>tuple adalah stuktur data yang digunakan untuk menyimpan sekumpulan data. <span>tuple sama seperti list hanya saja nilai isi tupe tersebut tidak bisa kita ubah atau hapus, <span>namun dapat kita isi dengan berbagai nilai <garis>tuple ditulis dengan tanda kurung biasa <khususon>()</khususon>
+        <span>mungkin saya tidak akan banyak membahas tentang tuple disini, tapi saya bahas yang pentingnya saja. <span>jika ingin mempelajari lebih dalam tentang tuple di python. kamu bisa melihat dokumentasi tentang tuple di situs resminya <a href="https://docs.python.org/2/tutorial/datastructures.html#tuples-and-sequences">python</a>
+        <garis>yang akan saya bahas disini adalah 
+      </p>
+      <p class="isi-tutorialnya" style="margin-left: 20px;">
+        1. membuat tuple<span>2. mengakses niai/isi tuple<span>3. menghitung nilai tuple
+      </p>
+      <h4 class="judul-tutorial">1. membuat tuple</h4>
+      <p class="isi-tutorialnya">
+        seperti yang saya jelaskan di atas tadi, untuk membuat tuple
+        <span>kita bisa menggunakan tanda kurung <khususon>()</khususon> <garis>Contoh:
+          <pre><code>
+  warna <sintakvar>= </sintakvar>(<string>"merah"</string>,<string>"kuning"</string>,<string>"hijau"</string>)
+          </code></pre>
+      </p>
+      <p class="isi-tutorialnya">
+        penulisan tuple tidak beda jauh dengan penulisan list yang sebelumnya kita pelajari <span>hanya saja list menggunakan kurung siku <khususon>[]</khususon> sedangkan tuple menggunakan kurung biasa <khususon>()</khususon>
+        <h4 class="judul-tutorial">2. mengakses nilai/isi tuple</h4>
+      </p>
+      <p class="isi-tutorialnya">
+        untuk mengakses nilai tuple juga sama seperti mengakses nilai pada list yaitu dengan memanggil nomor indexnya <garis>
+        Contoh:
+        <pre><code>
+  <komentar># membuat tuple </komentar>
+  warna <sintakvar>= </sintakvar>(<string>"merah"</string>,<string>"kuning"</string>,<string>"hijau"</string>)
+
+  <komentar># mengakses nilai tuple</komentar>
+  <sintakbawaan>print</sintakbawaan> warna[<intiger>0</intiger>]
+        </code></pre>
+      </p>
+      <p class="isi-tutorialnya">
+        Hasilnya:
+        <p><img src="img/tuple_run.png" alt="" class="gambar-tutorial"></p>
+        <h4 class="judul-tutorial">3. menghitung nilai tupe</h4>
+      </p>
+      <p class="isi-tutorialnya">untuk menghitung nilai di tuple bisa kita gunakan fungsi <khususon>len()</khususon><span>
+        fungsi <khususon>len() </khususon>ini tidak hanya untuk menghitung tuple, tapi bisa juga untuk mengitung list,array,string dsb.
+        <garis>mari kita latihan, buat file baru bernama <sukron>latihan_tuple.py</sukron> dan ikuti kode berikut
+          <pre><code>
+  <komentar># membuat tuple</komentar>
+  motor <sintakvar>=</sintakvar> (<string>"ninja"</string>,<string>"fu"</string>,<string>"mio"</string>)
+
+  <komentar># mengitung nilai tupe dengan len()</komentar>
+  <sintakbawaan>print</sintakbawaan><string> "data motor ada </string><intiger>{}</intiger><string>"</string>.<sintakbawaan>format</sintakbawaan>(<sintakbawaan>len</sintakbawaan>(motor))
+          </code></pre>
+      </p>
+      <p class="isi-tutorialnya">Hasilnya:
+        <p><img src="img/tuple_len_run.png" alt="" class="gambar-tutorial"></p>
+      </p>
+      <p class="isi-tutorialnya">mungkin segitu saja pembelajaran tentang tuple, dan silahkan pelajari tutorial selanjutnya <garis>
+        <a href="dictionary.html" class="btn btn-primary lj">Lanjut</a>
+      </p>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  </body>
+</html>

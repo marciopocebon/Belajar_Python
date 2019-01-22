@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- SCRIPT -->
+    <script src="../../js/script.js"></script>
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Ropa+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <title>6 jenis operator</title>
+    <!-- syntak -->
+    <link rel="stylesheet" href="/path/to/styles/default.css">
+    <script src="/path/to/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a href="#" class="navbar-brand">Belajar Python</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="../daftar.html" class="nav-link btn btn-outline-primary bad-daftar">kembali ke daftar tutorial</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="kolom-tut">
+      <h3 class="judul-tutorial">6 jenis operator pada python</h3>
+      <p class="isi-tutorialnya">
+        pada pembelajaran kali ini kita akan mengetahui 6 jenis operator di python. <garis>sebelumnya saya jelaskan dulu, apa itu operator? <garis>operator adalah simbol - simbol yang digunakan untuk melakukan operasi tertentu. <garis>ada 6 jenis operator pada python. <garis> diantaranya:
+      </p>
+      <p class="isi-tutorialnya" style="margin-left:20px;">
+        1. operator aritmatika <span>
+        2. operator penugasan <span>
+        3. operator pembandingan <span>
+        4. operator logika <span>
+        5. operator bitwise <span>
+        6. operator ternaty <span>
+        <h4 class="judul-tutorial">1. operator aritmatika</h4>
+      </p>
+      <p class="isi-tutorialnya">
+        opeartor aritmatika termasuk dalam operator yang paling sering digunakan dalam pemrograman. <garis>operator aritmatika terdiri dari
+      </p>
+      <table>
+        <tr>
+          <th>operator</th>
+          <th>simbol</th>
+        </tr>
+        <script>
+          operator_aritmatika();
+        </script>
+      </table>
+      <p class="isi-tutorialnya">
+        mari kita coba dalam program, buat file baru bernama <sukron>operator_aritmatika.py</sukron> <garis>dan ikuti kode berikut
+        <pre>
+          <code>
+  a <sintakvar>=</sintakvar> input("angka pertama: ")
+  b <sintakvar>=</sintakvar> input("angka kedua: ")
+  
+  <komentar># menggunakan operator penjumlahan</komentar>
+  c <sintakvar>=</sintakvar> a <sintakvar>+</sintakvar> b
+  <sintakbawaan>print</sintakbawaan><string> "</string><intiger>%d</intiger> <string>+ </string><intiger>%d</intiger> <string>=</string><intiger> %d</intiger><string>"</string><sintakvar> %</sintakvar> (a,b,c)
+  
+  <komentar># menggunakan operator pengurangan</komentar>
+  c <sintakvar>=</sintakvar> a <sintakvar>-</sintakvar> b
+  <sintakbawaan>print</sintakbawaan><string> "</string><intiger>%d</intiger> <string>- </string><intiger>%d</intiger> <string>=</string><intiger> %d</intiger><string>"</string><sintakvar> %</sintakvar> (a,b,c)
+  
+  <komentar># menggunakan operator pembagian</komentar>
+  c <sintakvar>=</sintakvar> a <sintakvar>/</sintakvar> b
+  <sintakbawaan>print</sintakbawaan><string> "</string><intiger>%d</intiger> <string>/ </string><intiger>%d</intiger> <string>=</string><intiger> %d</intiger><string>"</string><sintakvar> %</sintakvar> (a,b,c)
+  
+  <komentar># menggunakan operator perkalian</komentar>
+  c <sintakvar>=</sintakvar> a <sintakvar>*</sintakvar> b
+  <sintakbawaan>print</sintakbawaan><string> "</string><intiger>%d</intiger> <string>* </string><intiger>%d</intiger> <string>=</string><intiger> %d</intiger><string>"</string><sintakvar> %</sintakvar> (a,b,c)
+  
+  <komentar># menggunakan operator sisa bagi</komentar>
+  c <sintakvar>=</sintakvar> a <sintakvar>%</sintakvar> b
+  <sintakbawaan>print</sintakbawaan><string> "</string><intiger>%d</intiger> <string>%%</string><intiger> %d</intiger> <string>=</string><intiger> %d</intiger><string>"</string><sintakvar> %</sintakvar> (a,b,c)
+  
+  <komentar># menggunakan operator pemangkatan</komentar>
+  c <sintakvar>=</sintakvar> a <sintakvar>**</sintakvar> b
+  <sintakbawaan>print</sintakbawaan><string> "</string><intiger>%d</intiger> <string>**</string><intiger> %d</intiger> <string>=</string><intiger> %d</intiger><string>"</string><sintakvar> %</sintakvar> (a,b,c)
+          </code>
+        </pre>
+      </p>
+      <p class="isi-tutorialnya">
+        Hasilnya
+        <p>
+          <img src="img/aritmatika.png" alt="" class="gambar-tutorial">
+        </p>
+        <h4 class="judul-tutorial">2. operator penugasan</h4>
+      </p>
+      <p class="isi-tutorialnya">
+        operator ini digunakan untuk memberikan tugas pada variabel <garis>
+        Misalnya:
+        <pre><code>
+  nama <sintakvar>=</sintakvar><intiger> 22</intiger>
+        </code></pre>
+      </p>
+      <p class="isi-tutorialnya">maka variabel nama telah kita berikan tugas untuk menyimpan angka 22
+        <garis>operator penugasan terdiri dari:
+      </p>
+      <table>
+        <tr>
+          <th>operator</th>
+          <th>simbol</th>
+        </tr>
+        <script>operator_penugasan();</script>
+      </table>
+      <p class="isi-tutorialnya">
+        kita coba dalam program, buat file baru bernama <sukron>operator_penugasan.py</sukron><garis>dan ikuti kode berikut
+        <pre><code>
+  angka <sintakvar>= </sintakvar><sintakbawaan>input</sintakbawaan>(<string>"masukan angka: "</string>) <komentar># mengambil input angka</komentar>
+  
+  angka <sintakvar>+= </sintakvar><intiger>2 </intiger><komentar># tambahkan dengan 2</komentar>
+  
+  angka <sintakvar>-= </sintakvar><intiger>3 </intiger><komentar># kurangi 3</komentar>
+  
+  angka <sintakvar>*= </sintakvar><intiger>10</intiger> <komentar># kali 10</komentar>
+  
+  angka <sintakvar>/= </sintakvar><intiger>4 </intiger><komentar># bagi dengan 4</komentar>
+  
+  angka <sintakvar>**= </sintakvar><intiger>10</intiger> <komentar># pangkat 10</komentar>
+  
+  <sintakbawaan>print</sintakbawaan><string> "hasilnya: </string><intiger>%d</intiger><string>"</string><sintakvar> %</sintakvar> angka <komentar># tampilkan angka</komentar>
+        </code></pre>
+      </p>
+      <p class="isi-tutorialnya">hasilnya:
+        <p>
+          <img src="img/penugasan.png" alt="" class="gambar-tutorial">
+        </p>
+        <h4 class="judul-tutorial">3. operator pembandingan</h4>
+      </p>
+      <p class="isi-tutorialnya">
+        operator ini digunakan untuk membandingkan dua buah nilai atau <span>
+        sering juga dipakai untuk membuat sebuah kondisi. <garis>operator pembagian terdiri dari
+      </p>
+      <table>
+        <tr>
+          <th>operator</th>
+          <th>simbol</th>
+        </tr>
+        <script>operator_pembandingan();</script>
+      </table>
+      <p class="isi-tutorialnya">mari kita coba dalam program, buat file baru <sukron>bernama latihan_pembandingan.py</sukron><garis>lalu ikuti kode berikut
+        <pre><code>
+  a <sintakvar>=</sintakvar><sintakbawaan> input</sintakbawaan>(<string>"masukan angka pertama: "</string>)
+  b <sintakvar>=</sintakvar><sintakbawaan> input</sintakbawaan>(<string>"masukan angka kedua: "</string>)
+  
+  <sintakbawaan>print</sintakbawaan><string> "="</string><sintakvar>*</sintakvar><intiger>20</intiger>
+  <komentar># mengecek apakah a sama dengan b</komentar>
+  c <sintakvar>=</sintakvar> a <sintakvar>==</sintakvar> b
+  <sintakbawaan>print</sintakbawaan> <string>"a sama dengan b?: </string><intiger>%s</intiger><string>"</string><sintakvar>%</sintakvar>c
+  
+  <komentar># mengecek apakah a lebih besar dari b</komentar>
+  c <sintakvar>=</sintakvar> a <sintakvar>></sintakvar> b
+  <sintakbawaan>print</sintakbawaan> <string>"a lebih besar dari b?: </string><intiger>%s</intiger><string>"</string><sintakvar>%</sintakvar>c
+  
+  <komentar># mengecek apakah a lebih kecil dari b</komentar>
+  c <sintakvar>=</sintakvar> a <sintakvar><</sintakvar> b
+  <sintakbawaan>print</sintakbawaan> <string>"a lebih kecil dari b?: </string><intiger>%s</intiger><string>"</string><sintakvar>%</sintakvar>c
+  
+  <komentar># mengecek apakah a lebih besar sama dengan b</komentar>
+  c <sintakvar>=</sintakvar> a <sintakvar>>=</sintakvar> b
+  <sintakbawaan>print</sintakbawaan> <string>"a lebih besar sama dengan b?: </string><intiger>%s</intiger><string>"</string><sintakvar>%</sintakvar>c
+  
+  <komentar># mengecek apakah a lebih kecil sama dengan b</komentar>
+  c <sintakvar>=</sintakvar> a <sintakvar><=</sintakvar> b
+  <sintakbawaan>print</sintakbawaan> <string>"a lebih kecil sama dengan b?: </string><intiger>%s</intiger><string>"</string><sintakvar>%</sintakvar>c
+  
+  <komentar># mengecek apakah a tidak sama dengan b</komentar>
+  c <sintakvar>=</sintakvar> a <sintakvar>!=</sintakvar> b
+  <sintakbawaan>print</sintakbawaan> <string>"a tidak sama dengan b?: </string><intiger>%s</intiger><string>"</string><sintakvar>%</sintakvar>c
+        </code></pre>
+      </p>
+      <p class="isi-tutorialnya">Hasilnya:
+        <p>
+          <img src="img/pembandingan.png" alt="" class="gambar-tutorial">
+        </p>
+        <h4 class="judul-tutorial">4. operator logika</h4>
+      </p>
+      <p class="isi-tutorialnya">
+        operator logika digunakan untuk membuat operasi logika <garis>operator logika terdiri dari
+      </p>
+      <table>
+        <tr>
+          <th>nama operator</th>
+          <th>simbol di python</th>
+        </tr>
+        <script>operator_logika();</script>
+      </table>
+      <p class="isi-tutorialnya">
+        <garis>Contoh:
+          <pre><code>
+  a <sintakvar>=</sintakvar><intiger> True</intiger>
+  b <sintakvar>=</sintakvar><intiger> False</intiger>
+  
+  <komentar># Logika AND</komentar>
+  c <sintakvar>=</sintakvar> a <sintakvar>and</sintakvar> b
+  <sintakbawaan>print</sintakbawaan><string> "</string><intiger>%r</intiger><string> and</string><intiger> %r</intiger><string> =</string> <intiger>%r</intiger><string>"</string><sintakvar> % </sintakvar>(a,b,c)
+  
+  <komentar># Logika OR</komentar>
+  c <sintakvar>=</sintakvar> a<sintakvar> or</sintakvar> b
+  <sintakbawaan>print</sintakbawaan><string> "</string><intiger>%r</intiger><string> or</string><intiger> %r</intiger><string> =</string> <intiger>%r</intiger><string>"</string><sintakvar> % </sintakvar>(a,b,c)
+  
+  <komentar># Logika Not</komentar>
+  c <sintakvar>=</sintakvar> <sintakvar>not</sintakvar> a
+  <sintakbawaan>print</sintakbawaan><string> "</string>not <intiger>%r</intiger> <string> =</string> <intiger>%r</intiger><string>"</string><sintakvar> %</sintakvar> (a,c)
+          </code></pre>
+      </p>
+      <p class="isi-tutorialnya">Hasilnya:
+        <p>
+          <img src="img/logika.png" alt=""class="gambar-tutorial">
+        </p>
+        <h4 class="judul-tutorial">5. operator bitwise</h4>
+      </p>
+      <p class="isi-tutorialnya">
+        Operator Bitwise adalah operator untuk melakukan operasi berdasarkan bit/biner. <garis>operator bitwise terdiri dari
+      </p>
+      <table>
+        <tr>
+          <th>nama</th>
+          <th>simbol</th>
+        </tr>
+        <script>operator_bitwise();</script>
+      </table>
+      <p class="isi-tutorialnya">
+        kita coba dalam program, buat file baru bernama <sukron>latihan_bitwise.py</sukron> dan ikuti kode berikut
+        <pre><code>
+  a <sintakvar>=</sintakvar><sintakbawaan> input</sintakbawaan>(<string>"Masukan nilai a: "</string>)
+  b <sintakvar>=</sintakvar><sintakbawaan> input</sintakbawaan>(<string>"Masukan nilai b: "</string>)
+  
+  <komentar># Operasi AND</komentar>
+  c <sintakvar>=</sintakvar> a <sintakvar>&</sintakvar> b
+  <sintakbawaan>print</sintakbawaan><string> "a & b = <intiger>%s</intiger>"</string><sintakvar> %</sintakvar> c
+  
+  <komentar># Operasi OR</komentar>
+  c <sintakvar>=</sintakvar> a <sintakvar>| </sintakvar>b
+  <sintakbawaan>print</sintakbawaan><string> "a | b = <intiger>%s</intiger>"</string><sintakvar> %</sintakvar> c
+  
+  <komentar># Operasi XOR</komentar>
+  c <sintakvar>=</sintakvar> a <sintakvar>^ </sintakvar>b
+  <sintakbawaan>print</sintakbawaan><string> "a ^ b = <intiger>%s</intiger>"</string><sintakvar> %</sintakvar> c
+  
+  <komentar># Operasi Not</komentar>
+  c <sintakvar>=</sintakvar> <sintakvar>~</sintakvar>a
+  <sintakbawaan>print</sintakbawaan><string> "~a =<intiger> %s</intiger>"</string><sintakvar> %</sintakvar> c
+  
+  <komentar># Operasi shift left (tukar posisi biner)</komentar>
+  c <sintakvar>=</sintakvar> a <sintakvar><< </sintakvar>b
+  <sintakbawaan>print</sintakbawaan><string> "a << b = <intiger>%s</intiger>"</string><sintakvar> %</sintakvar> c
+  
+  <komentar># Operasi shift right (tukar posisi biner)</komentar>
+  c <sintakvar>=</sintakvar> a<sintakvar> >> </sintakvar>b
+  <sintakbawaan>print</sintakbawaan><string> "a >> b = <intiger>%s</intiger>"</string><sintakvar> %</sintakvar> c
+        </code></pre>
+      </p>
+      <p class="isi-tutorialnya">
+        Hasilnya:
+        <p>
+          <img src="img/bitwise.png" alt="" class="gambar-tutorial">
+        </p>
+        <h4 class="judul-tutorial">6. operator ternaty</h4>
+      </p>
+      <p class="isi-tutorialnya">
+          Operator ternary juga dikenal dengan operator kondisi, <span>karena digunakan untuk membuat sebuah ekspresi kondisi seperti <khususon>if.. else</khususon><garis>Contoh penggunaan operator bitwise:
+          <pre><code>
+  umur <sintakvar>=</sintakvar> <sintakbawaan>input</sintakbawaan>(<string>"berapa umur kamu?: "</string>)
+  hasil <sintakvar>=</sintakvar> <string>"dewasa"</string><sintakvar> if</sintakvar> umur <sintakvar>></sintakvar><intiger> 15</intiger><sintakvar> else</sintakvar><string> "masih kecil"</string>
+
+  <sintakbawaan>print</sintakbawaan> hasil
+          </code></pre>
+      </p>
+      <p class="isi-tutorialnya">
+        Hasilnya:
+        <p><img src="img/bitwise_run.png" alt="" class="gambar-tutorial"></p>
+      </p>
+      <p class="isi-tutorialnya">
+        oke, sekian tentang pembelajaran mengenai 6 jenis operator di python <span>
+        dan silahkan pelajari tutorial selanjutnya <garis>
+        <a href="list.html" class="btn btn-primary lj">Lanjut</a>
+      </p>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
+  <!-- MY CSS -->
+  <link rel="stylesheet" href="../../css/style.css">
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css?family=Ropa+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  <title>python loop</title>
+  <!-- syntak -->
+  <link rel="stylesheet" href="/path/to/styles/default.css">
+  <script src="/path/to/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a href="#" class="navbar-brand">Belajar Python</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="../daftar.html" class="nav-link btn btn-outline-primary bad-daftar">kembali ke daftar tutorial</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+  <div class="kolom-tut">
+    <h3 class="judul-tutorial">memahami loop pada python</h3>
+    <p class="isi-tutorialnya">
+      sekarang kita akan belajar loop di python, <garis>apa itu loop?<garis>loop itu adalah perulangan, biar lebih sreg kita sebut saja perulangan <garis>perulangan dalam bahasa pemograman berfungsi untuk menyuruh program melakukan sesuatu <span>secara berulang ulang, ada dua macam perulangan di python, <garis>diantaranya:
+    </p>
+    <p class="isi-tutorialnya" style="margin-left: 20px">
+    1.perulangan for<span>2.perulangan while</p>
+    <h4 class="judul-tutorial">1. perulangan for</h4>
+    <p class="isi-tutorialnya">penulisan perulangan <khususon>for</khususon>:</p>
+    <pre><code>
+  <sintakvar>for</sintakvar> index <sintakvar>in</sintakvar><sintakbawaan> range</sintakbawaan>(jumlah_perulangan):
+    <komentar># kode...
+    # ...</komentar>
+    </code></pre>
+    <p class="isi-tutorialnya">
+      Contoh:
+    </p>
+    <pre><code>
+  jumlah <sintakvar>=</sintakvar><intiger> 5</intiger>
+
+  <sintakvar>for</sintakvar> i <sintakvar>in</sintakvar><sintakbawaan> range</sintakbawaan>(jumlah):
+    <sintakbawaan>print</sintakbawaan><string> "perulangan ke:"</string>,i
+    </code></pre>
+    <p class="isi-tutorialnya">note: variabel <khususon>jumlah</khususon> untuk menentukan jumlah perulangan,<garis>Hasilnya:
+      <p><img src="img/perulangan_for_run.png" alt="" class="gambar-tutorial"></p>
+    </p>
+    <p class="isi-tutorialnya">
+      menampilkan data list menggunakan perulangan <khususon>for</khususon>
+    </p>
+    <pre><code>
+  buah <sintakvar>=</sintakvar> [<string>"melon"</string>,<string>"dukuh"</string>,<string>"rambutan"</string>,<string>"durian"</string>]<komentar> # enak ya :D</komentar>
+
+  <sintakvar>for</sintakvar> hasil <sintakvar>in</sintakvar> buah:
+    <sintakbawaan>print</sintakbawaan> hasil
+    </code></pre>
+    <p class="isi-tutorialnya">
+      Hasilnya:
+      <p><img src="img/for_list_run.png" alt="" class="gambar-tutorial"></p>
+    </p>
+    <h4 class="judul-tutorial">2. perulangan while</h4>
+    <p class="isi-tutorialnya">
+      bentuk penulisan perulangan <khususon>while</khususon>
+    </p>
+    <pre><code>
+  <sintakvar>while</sintakvar>(<komentar> #kondisi</komentar> ):
+    <komentar># code ...
+    # ...</komentar>
+    </code></pre>
+    <p class="isi-tutorialnya">Contoh:</p>
+    <pre><code>
+  hitung <sintakvar>=</sintakvar><intiger> 0</intiger>
+
+  <sintakvar>while</sintakvar>(<intiger>True</intiger>):
+    hitung <sintakvar>+=</sintakvar><intiger> 1</intiger>
+    jawab <sintakvar>= </sintakvar><sintakbawaan>raw_input</sintakbawaan>(<string>"lagi?: "</string>)
+    <sintakvar>if</sintakvar> jawab <sintakvar>!=</sintakvar><string> "ya"</string>:
+      <sintakvar>break</sintakvar>
+  
+  <sintakbawaan>print</sintakbawaan><string> "perulangan sebanyak</string><intiger> {}</intiger><string> kali"</string>.<sintakbawaan>format</sintakbawaan>(hitung)
+    </code></pre>
+    <p class="isi-tutorialnya">Pertama menentukan variabel untuk menghitung,dan menentukan kapan perulangan berhenti,<span> jika user menjawab selain <khususon>ya</khususon>... maka proses looping akan diberhentikan oleh fungsi <khususon>break</khususon>,<garis>setelah perulangan selesai, cetak berapa kali perulangan terjadi
+    </p>
+      <pre><code>
+    <sintakbawaan>print</sintakbawaan><string> "perulangan sebanyak</string><intiger> {}</intiger><string> kali"</string>.<sintakbawaan>format</sintakbawaan>(hitung)
+      </code></pre>
+    <p class="isi-tutorialnya">Hasilnya:<p><img src="img/while_run.png" alt="" class="gambar-tutorial"></p></p>
+    <p class="isi-tutorialnya">biar lebih joss mari kita latihan, buat file baru bernama <sukron>latihan_while.py</sukron> dan ikuti kode berikut</p>
+    <pre><code>
+  hitung <sintakvar>=</sintakvar><intiger> 0</intiger><komentar> # membuat variabel untuk menghitung jumlah perulangan</komentar>
+
+  jawab <sintakvar>=</sintakvar><sintakbawaan> raw_input</sintakbawaan>(<string>"ulang atau tidak?: "</string>)
+
+  <sintakvar>if</sintakvar> jawab <sintakvar>==</sintakvar><string> "ulang"</string>:
+    tanya_jumlah <sintakvar>=</sintakvar><sintakbawaan> input</sintakbawaan>(<string>"ulang berapa kali?: "</string>)<komentar> # tanyakan jumlah perulangan jika user menjawab ulang</komentar>
+    <sintakvar>while</sintakvar>(hitung<sintakvar> <</sintakvar> tanya_jumlah):
+      hitung <sintakvar>+=</sintakvar> <intiger>1</intiger>
+      <sintakbawaan>print</sintakbawaan><string> "perulangan ke</string><intiger> {}</intiger><string>"</string>.<sintakbawaan>format</sintakbawaan>(hitung)
+    
+    <komentar># menampilkan jumlah perulangan</komentar>
+    <sintakbawaan>print</sintakbawaan><string> "perulangan sebanyak</string><intiger> {}</intiger> kali sudah beres bos<string>"</string><sintakbawaan>.format</sintakbawaan>(tanya_jumlah)
+
+  <sintakvar>else</sintakvar>:
+    <sintakbawaan>print</sintakbawaan><string> "mungkin dia lelah"</string><komentar> # jika user menjawab selain ulang</komentar>
+    </code></pre>
+    <p class="isi-tutorialnya">Hasilnya:
+      <p><img src="img/latihan_while_run.png" alt="" class="gambar-tutorial"></p>
+    </p>
+    <p class="isi-tutorialnya">oke, sekian pembelajaran tentang loop, semoga kamu sudah mengerti dan silahkan pelajari tutorial selanjutnya<garis>pesan dari saya: sering sering latihan agar kemampuan codingmu mantap,<span> dan jangan di biasakan copy paste code saat kamu belajar coding, belajarlah menulis kodemu sendiri <garis><a href="fungsi.html" class="btn btn-primary lj">Lanjut</a></p>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

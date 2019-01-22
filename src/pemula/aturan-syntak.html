@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
+  <!-- MY CSS -->
+  <link rel="stylesheet" href="../../css/style.css">
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css?family=Ropa+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  <title>aturan penulisan syntak</title>
+  <!-- syntak -->
+  <link rel="stylesheet" href="/path/to/styles/default.css">
+  <script src="/path/to/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a href="#" class="navbar-brand">Belajar Python</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="../daftar.html" class="nav-link btn btn-outline-primary bad-daftar">kembali ke daftar tutorial</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="kolom-tut">
+    <h3 class="judul-tutorial">aturan penulisan syntak di python</h3>
+    <p class="isi-tutorialnya">
+      kali ini kita akan belajar cara penulisan syntak yang wajib diketahui di python. <garis>
+        apa itu syntak ? <garis> syntak adalah aturan penulisan blok kode pada program. <span>penulisan syntak pada
+            bahasa pemograman python harus dipatuhi. karena python sangat cerewet dalam urusan syntak <garis>jika tidak
+              dipatuhi ?<garis>maka program akan error <garis>di python ada 5 aturan penulisan syntak. <span>apa saja
+                    itu?<span>mari kita bahas semuanya.
+                      <h3 class="judul-tutorial">1.Penulisan Statement</h3>
+    </p>
+    <p class="isi-tutorialnya">
+      Statement adalah sebuah intruksi atau kalimat perintah yang akan dieksekusi oleh komputer.<garis>Contoh
+        <pre>
+              <code>
+  <sintakbawaan>print</sintakbawaan><string> "hello"</string>
+  <sintakbawaan>print</sintakbawaan><string> "kamu"</string></code>
+            </pre>
+    </p>
+    <p class="isi-tutorialnya">
+      Penulisan satu statement tidak diakhiri dengan tanda titik-koma.<span>Sedangkan, bila kita ingin menulis lebih
+        dari satu statement dalam satu baris, <span>maka kita harus memisahnya dengan titik-koma.<garis>Contoh <garis>
+              <pre>
+            <code>
+  <sintakbawaan>print</sintakbawaan><string> "hello"</string>;<sintakbawaan> print</sintakbawaan><string> "kamu"</string></code>
+          </pre>
+    </p>
+    <p class="isi-tutorialnya">
+      tapi menurut beberapa style guide python, tidak dianjurkan menulis lebih dari satu statement dalam satu baris.<span>
+        Karena akan sulit dibaca.
+        <h3 class="judul-tutorial">2.Penulisan String</h3>
+    </p>
+    <p class="isi-tutorialnya">
+      String adalah teks atau kumpulan dari karakter.<span>String dalam pemrograman biasanya ditulis dengan dibungkus
+        menggunakan tanda petik.<span>Bisa menggunakan tanda petik tunggal maupun ganda.<garis>Contoh:
+            <pre>
+            <code>
+  <sintakbawaan>print</sintakbawaan><string> "hello"</string>
+  <sintakbawaan>print</sintakbawaan><string> 'kamu'</string>
+  nama <sintakvar>=</sintakvar><string> "muslim ambari"</string>
+  umur <sintakvar>=</sintakvar><string> '18 tahun'</string></code>
+          </pre>
+            <h3 class="judul-tutorial">3.Penulisan Case</h3>
+    </p>
+    <p class="isi-tutorialnya">
+      Sintak Python bersifat case sensitive, artinya <sukron>namaSaya</sukron> dengan <sukron>namasaya</sukron>
+      dibedakan.<garis>Contoh:
+        <pre>
+          <code>
+  namaSaya <sintakvar>=</sintakvar><string> "muslim ambari"</string>
+  NamaSaya <sintakvar>=</sintakvar><string> "muslim ambari"</string></code>
+        </pre>
+    </p>
+    <p class="isi-tutorialnya">
+      Lihat antara variabel <sukron>namaSaya</sukron> dan <sukron>NamaSaya</sukron> itu beda. meskipun isi variabelnya
+      sama.
+      <h3 class="judul-tutorial">4.Penulisan Blok Program</h3>
+    </p>
+    <p class="isi-tutorialnya">Blok program adalah kumpulan dari beberpaa statement yang digabungkan dalam satu blok.<span>Penulisan
+        blok program harus ditambahkan tab/spasi <khususon>2</khususon> atau <khususon>4</khususon> kali <garis><b>contoh
+            penulisan yang benar</b>
+          <p>
+            <img src="img/syntak_benar.png" alt="" class="gambar-tutorial">
+          </p>
+    </p>
+    <p class="isi-tutorialnya"><b>contoh penulisan yang salah</b>
+      <p>
+        <img src="img/syntak_salah.png" alt="" class="gambar-tutorial">
+      </p>
+      <h3 class="judul-tutorial">5.Penulisan Komentar</h3>
+    </p>
+    <p class="isi-tutorialnya">
+      Komentar adalah baris kode yang tidak akan dieksekusi oleh prgram.<span>Komentar digunakan untuk memberikan
+        informasi tambahan dan untuk menonaktifkan kode.<span>Ada beberapa cara menulis komentar pada pemrograman
+          Python.
+          <h4 class="judul-tutorial">menggunakan tanda pagar (#)</h4>
+    </p>
+    <p class="isi-tutorialnya">komentar menggunakan tanda pagar (#)<span>Cara ini paling sering digunakan.<komentar>Contoh:
+          <pre style="color:rgb(104, 104, 104);">
+					<code>
+  <komentar># ini adalah komentar</komentar>
+  <komentar># ini juga</komentar></code>
+				</pre>
+          <h4 class="judul-tutorial">menggunakan tanda petik</h4>
+    </p>
+    <p class="isi-tutorialnya">
+      Selain untuk mengapit string, tanda petik juga dapat digunakan untuk membuat komentar.<garis>Contoh:
+        <pre style="color:rgb(104, 104, 104);">
+						<code>
+  <string>"komentar dengan tanda petik ganda"</string>
+  <string>'komentar menggunakan tanda petik tunggal'</string></code>
+				</pre>
+        <h4 class="judul-tutorial">menggunakan triple tanda petik</h4>
+    </p>
+    <p class="isi-tutorialnya">
+      triple tanda petik, sering digunakan untuk menuliskan dokumentasi <garis>Contoh:
+        <pre style="color:rgb(104, 104, 104);">
+					<code>
+  <string>"""
+  komentar dengan triple tanda petik
+  """</string></code>
+				</pre>
+    </p>
+    <p class="isi-tutorialnya">
+      oke, sekian pelajaran mengenai syntak di python. dan silahkan pelajari tutorial selanjutnya <span>
+        <a href="variabel-type-data.html" class="btn btn-primary lj">Lanjut</a>
+    </p>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

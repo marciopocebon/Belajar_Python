@@ -1,0 +1,236 @@
+.display-4,
+.lead {
+  color: #ffffff !important;
+}
+
+.display-4 {
+  font-family: 'Ropa Sans';
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-top: 30%;
+}
+
+.jumbotron {
+  background-image: url("../img/header.jpg");
+  background-size: cover;
+  height: 600px;
+}
+
+.tmp {
+  color: #ffffff !important;
+}
+
+.gr {
+  border-bottom: 2px solid blue;
+  width: 10%;
+  margin: auto;
+}
+
+.text-center p {
+  margin-top: 20px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+@media(min-width:992px) {
+  .bad {
+    margin-left: 15px;
+  }
+
+  .nav-link {
+    text-transform: capitalize;
+  }
+
+  .navbar-brand {
+    font-size: 25px;
+  }
+
+  .display-4 {
+    margin-top: 13%;
+    font-size: 70px;
+  }
+
+  .intro-daftar {
+    text-transform: uppercase;
+  }
+
+  .judul-tutorial {
+    text-transform: capitalize;
+  }
+}
+
+.bad:hover {
+  color: #ffffff !important;
+}
+
+.navbar-brand {
+  font-family: 'Ropa Sans';
+}
+
+span {
+  display: block;
+}
+
+.kolom-daftar {
+  background-color: #ffffff;
+  border-radius: 2px;
+  box-shadow: 0 0px 1px #000000;
+  margin: auto;
+  width: 80%;
+  margin-top: 20px;
+}
+
+.intro-daftar {
+  font-weight: bold;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+.isi-daftar-tutorial {
+  padding: 8px;
+  margin-top: 100px;
+}
+
+.gr-daftar {
+  border-bottom: 1px solid #acacac;
+  width: 98%;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.text {
+  font-family: 'Ubuntu';
+  text-align: left;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+baru {
+  display: block;
+  margin-top: 20px;
+}
+
+.daftar-kategori-baru {
+  font-weight: bold;
+  font-size: 25px;
+  border-bottom: 2px solid rgb(76, 76, 255);
+  width: 3%;
+  transition: width 2s;
+  margin-top: 20px;
+}
+
+.daftar-kategori-baru:hover {
+  width: 100%;
+}
+
+.bad-daftar {
+  margin: 10px;
+}
+
+.bad-daftar:hover {
+  color: #ffffff !important;
+}
+
+/* TUTORIAL */
+.kolom-tut {
+  background-color: #ffffff;
+  border-radius: 2px;
+  box-shadow: 0px 0px 2px #acacac;
+  width: 70%;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.isi-tutorialnya {
+  font-family: 'Open Sans';
+  color: #555555 !important;
+  padding: 20px;
+  text-align: left;
+}
+
+.judul-tutorial {
+  font-family: 'PT Sans';
+  font-weight: 600;
+  color: #424242;
+  margin-left: 20px;
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+
+garis {
+  display: block;
+  margin-top: 15px;
+}
+
+.gambar-tutorial {
+  width: 90%;
+  margin-left: 20px;
+}
+
+.lj {
+  margin-top: 20px;
+}
+
+pre {
+  border: 1px solid #acacac;
+  width: 90%;
+  margin-left: 20px;
+  background-color: #272822;
+  color: #ffffff;
+}
+
+sukron {
+  background-color: #acacac;
+  padding: 0px 10px;
+  color: #ffffff;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+/* TABLE */
+table,
+td,
+th {
+  border: 1px solid #acacac;
+  border-collapse: collapse;
+  padding: 7px 10px;
+  width: 75%;
+  margin-left: 20px;
+}
+
+th {
+  font-family: 'PT Sans';
+  text-align: center;
+  padding: 15px;
+}
+
+td {
+  font-family: 'Open Sans';
+  color: #4d4d4d;
+}
+
+/* Tutotorial style */
+.isi-daftar-tutorial .tutut {text-decoration: none;}
+
+/* SYNTAK */
+string {color: #f5e451;}
+sintakvar {color: rgb(233, 43, 75);}
+intiger {color: #326EBC;}
+sintakbawaan {color: #4CCFE6;}
+sintakpar {color: #F89206;}
+sintakdf {color: rgb(81, 236, 3);}
+sukron:hover {background-color: #6b6b6b;}
+khususon {color: #21a700;}
+komentar {color: #75705E;}
+/**/
+
+.gb {
+  border-bottom: 2px solid blue;
+  margin: auto;
+  width: 50px;
+}

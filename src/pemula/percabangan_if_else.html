@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
+  <!-- MY CSS -->
+  <link rel="stylesheet" href="../../css/style.css">
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css?family=Ropa+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  <title>percabangan if..else</title>
+  <!-- syntak -->
+  <link rel="stylesheet" href="/path/to/styles/default.css">
+  <script src="/path/to/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a href="#" class="navbar-brand">Belajar Python</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="../daftar.html" class="nav-link btn btn-outline-primary bad-daftar">kembali ke daftar tutorial</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+  <div class="kolom-tut">
+    <h3 class="judul-tutorial">percabangan if..else</h3>
+    <p class="isi-tutorialnya">
+      apa itu percabangan ? <garis>percabangan itu seperti logika "jika..maka",<garis> Percabangan akan membuat program menentukan tindakan sesuai dengan logika/kondisi yang telah kita berikan.<span>pastikan sebelumnya sudah memahami tentang "6 jenis operator pada python".
+      <garis>percabangan di python bisa kita tulis seperti ini
+        <pre><code>
+  i<sintakvar> = </sintakvar><intiger>10</intiger>
+
+  <sintakvar>if</sintakvar> i <sintakvar>==</sintakvar><intiger> 10</intiger>:
+    <komentar># jika variabel i sama dengan 10 maka akan masuk kesini</komentar>
+  <sintakvar>else</sintakvar>:
+    <komentar># jika tidak sama, maka akan masuk kesini</komentar>
+        </code></pre>
+    </p>
+    <p class="isi-tutorialnya">biar cepat paham, mari kita latihan.<garis> silahkan buat file baru bernama <sukron>latihan_percabangan.py</sukron> dan ikuti kode berikut</p>
+    <pre><code>
+  umur <sintakvar>=</sintakvar><sintakbawaan> input</sintakbawaan>(<string>"berapa umur kamu?: "</string>)
+
+  <sintakvar>if</sintakvar> umur<sintakvar> ==</sintakvar><intiger> 18</intiger>:
+    <komentar># kondisi pertama</komentar>
+    <sintakbawaan>print</sintakbawaan><string> "umur kita sama"</string>
+  <sintakvar>else</sintakvar>:
+    <komentar># kondisi kedua</komentar>
+    <sintakbawaan>print</sintakbawaan><string> "umur kita beda"</string>
+    </code></pre>
+    <p class="isi-tutorialnya">Hasilnya:
+      <p><img src="img/percabangan_run.png" alt="" class="gambar-tutorial"></p>
+    </p>
+    <p class="isi-tutorialnya">apa artinya?, artinya jika inputan umur sama dengan 18 maka akan masuk ke kondisi pertama,<span>jika tidak, maka akan masuk ke kondisi kedua</p>
+    <h4 class="judul-tutorial">percabangan if..elif..else</h4>
+    <p class="isi-tutorialnya">percabangan <khususon>if..elif..else</khususon> ini digunakan apabila membutuhkan lebih dari 2 keputusan,<garis>ikuti saja kode ini dulu, nanti saya jelaskan</p>
+    <pre><code>
+  umur<sintakvar> = </sintakvar><sintakbawaan>input</sintakbawaan>(<string>"berapa umur kamu?: "</string>)
+
+  <sintakvar>if</sintakvar> umur<sintakvar> ></sintakvar><intiger> 18</intiger>:
+    <komentar># jika umur lebih besar dari 18, maka akan masuk kesini</komentar>
+    <sintakbawaan>print</sintakbawaan><string> "umur kamu di atas 18"</string>
+
+  <sintakvar>elif</sintakvar> umur<sintakvar> <</sintakvar> <intiger>18</intiger>:
+    <komentar># jika umur lebih kecil dari 18, maka akan masuk kesini</komentar>
+    <sintakbawaan>print</sintakbawaan><string> "umur kamu di bawah 18"</string>
+
+  <sintakvar>else</sintakvar>:
+    <komentar># jika kedua kondisi di atas tidak terpenuhi, maka akan masuk kesini
+    <sintakbawaan>print</sintakbawaan><string> "umur kamu 18"</string>
+    </code></pre>
+    <p class="isi-tutorialnya">Hasilnya:
+      <p><img src="img/if_elif_else_run.png" alt="" class="gambar-tutorial"></p>
+    </p>
+    <p class="isi-tutorialnya">jika kondisi pertama tidak terpenuhi, maka ia akan mengecek kondisi kedua,<span> jika kondisi kedua tidak cocok juga, maka akan masuk kebagian else<garis>sekian pembelajaran tentang percabangan kali ini, semoga sudah paham.<span>kalau belum paham juga, bisa contact saya, <garis>kalau sudah paham silahkan pelajari tutorial selanjutnya<garis>
+      <a href="loop.html" class="btn btn-primary lj">Lanjut</a>
+    </p>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

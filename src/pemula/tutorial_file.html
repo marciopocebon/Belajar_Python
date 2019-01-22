@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
+  <!-- MY CSS -->
+  <link rel="stylesheet" href="../../css/style.css">
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css?family=Ropa+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  <title>aturan penulisan syntak</title>
+  <!-- syntak -->
+  <link rel="stylesheet" href="/path/to/styles/default.css">
+  <script src="/path/to/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a href="#" class="navbar-brand">Membaca dan Menulis File di Python</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="../daftar.html" class="nav-link btn btn-outline-primary bad-daftar">kembali ke daftar tutorial</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="kolom-tut">
+    <h3 class="judul-tutorial">Membaca dan Menulis File di Python</h3>
+    <p class="isi-tutorialnya">
+      proses baca dan tulis sangat penting untuk dipahami, dalam pemrograman Python, <span>karena banyak digunakan
+        untuk pengolahan dan pemerosesan file.<garis>Pada pembelajaran kali ini, kita akan belajar cara membaca dan
+          menulis kesuatu file.
+    </p>
+    <h4 class="judul-tutorial">Membaca file di python</h4>
+    <p class="isi-tutorialnya">
+      python sudah membawa fungsi <khususon>open()</khususon> untuk memaca dan menulis file <garis>fungsi ini memiliki
+        dua parameter yaitu nama file dan mode nya, <span>penulisan fungsi <khususon>open()</khususon> ini sama seperti
+          variabel kita harus memberikan nama variabelnya untuk menampung isi file
+          <p><img src="img/ex_file.png" alt="" class="gambar-tutorial"></p>
+    </p>
+    <p class="isi-tutorialnya">Contoh penulisan:</p>
+    <pre><code>
+  file <sintakvar>=</sintakvar><sintakbawaan> open</sintakbawaan>(<string>"path/ke/file.txt"</string>,<string>"r"</string>)
+    </code></pre>
+    <p class="isi-tutorialnya">parameter mode fungsinya untuk menentukan hak akses terhadap file <garis>mode yang
+        tersedia di python:</p>
+    <table>
+      <tr>
+        <th>keterangan</th>
+        <th>mode</th>
+      </tr>
+      <tr>
+        <td>membuka file hanya untuk dibaca</td>
+        <td>r</td>
+      </tr>
+      <tr>
+        <td>untuk menulis ke file, jika isi file sudah ada.. ada maka akan diganti dengan yang baru ditulis</td>
+        <td>w</td>
+      </tr>
+      <tr>
+        <td>untuk menambahkan data/tulisan ke file, jika isi file sudah ada maka akan ditambahkan dan tidak diganti</td>
+        <td>a</td>
+      </tr>
+      <tr>
+        <td>untuk membaca dan menulis ke file</td>
+        <td>r+</td>
+      </tr>
+    </table>
+    <h4 class="judul-tutorial">Membaca Semua Teks dalam File</h4>
+    <p class="isi-tutorialnya">mari kita latihan untuk membaca file, buat 2 buah file seperti ini</p>
+    <pre><code>
+  baca_file.py
+  data.txt
+    </code></pre>
+    <p class="isi-tutorialnya">dan ikuti kode berikut:<garis>untuk file <sukron>data.txt</sukron> kita isikan saja
+        seperti ini</p>
+    <pre><code>
+  hello semua
+  ini isi dari file data.txt
+    </code></pre>
+    <p class="isi-tutorialnya">dan untuk file <sukron>baca_file.py</sukron> isikan seperti ini</p>
+    <pre><code>
+  f <sintakvar>=</sintakvar><sintakbawaan> open</sintakbawaan>(<string>"data.txt"</string>,<string>"r"</string>)
+  <sintakbawaan>print</sintakbawaan> f.read()
+
+  f.close()
+    </code></pre>
+    <p class="isi-tutorialnya">Pertama kita membuka file dengan fungsi <khususon>open()</khususon>, selanjutnya membaca
+      isinya dengan method <khususon>read()</khususon>, dan terakhir menutup file dengan <khususon>close()</khususon> agar dihapus dalam memori
+      <garis>sekarang coba kita jalankan, dan lihat hasilnya: <p><img src="img/file_io_run.png" alt="" class="gambar-tutorial"></p>
+        <h4 class="judul-tutorial">membaca file perbaris</h4>
+    </p>
+    <p class="isi-tutorialnya">
+      untuk membaca file perbaris, kita membutuhkan method <khususon>readlines()</khususon><garis>Coba dalam program:
+    </p>
+    <pre><code>
+  f <sintakvar>=</sintakvar><sintakbawaan> open</sintakbawaan>(<string>"data.txt"</string>,<string>"r"</string>)
+  <sintakbawaan>print</sintakbawaan> f.readlines()
+
+  f.close()
+    </code></pre>
+    <p class="isi-tutorialnya">Saat dieksekusi, kode di atas akan menghasilkan output berupa list,<span> karena kita menggunakan method <khususon>readlines()</khususon>, <garis>Hasil outputnya: <p><img src="img/file_io_readlines_run.png" alt="" class="gambar-tutorial"></p></p>
+    <p class="isi-tutorialnya">Perhatikan <khususon>\n</khususon> adalah EOL (End of Line), simbol ini akan membuat baris baru.<garis>sekarang coba ubah kodenya menjadi seperti ini:</p>
+    <pre><code>
+  f <sintakvar>=</sintakvar><sintakbawaan> open</sintakbawaan>(<string>"data.txt"</string>,<string>"r"</string>)
+  isi <sintakvar>=</sintakvar> f.readlines()
+
+  <komentar># mencetak baris pertama</komentar>
+  <sintakbawaan>print</sintakbawaan> isi[<intiger>0</intiger>]
+
+  <komentar># mencetak baris kedua</komentar>
+  <sintakbawaan>print</sintakbawaan> isi[<intiger>1</intiger>]
+
+  <komentar># menutup file</komentar>
+  f.close()
+    </code></pre>
+    <p class="isi-tutorialnya">Hasilnya: <p><img src="img/file_io_run_list.png" alt="" class="gambar-tutorial"></p></p>
+    <p class="isi-tutorialnya">
+      Tunggu dulu… bagaimana kalau filenya memiliki banyak baris?<garis>gampang, tinggal gunakan perulangan untuk mencetaknya, silahkan ubah kodenya menjadi seperti ini:
+    </p>
+    <pre><code>
+  f <sintakvar>=</sintakvar><sintakbawaan> open</sintakbawaan>(<string>"data.txt"</string>,<string>"r"</string>)
+  isi <sintakvar>=</sintakvar> f.readlines()
+
+  <komentar># mencetak isi file dengan perulangan</komentar>
+  <sintakvar>for</sintakvar> hasil <sintakvar>in</sintakvar> isi:
+      <sintakbawaan>print </sintakbawaan>hasil
+
+  <komentar># menutup file</komentar>
+  f.close()
+    </code></pre>
+    <p class="isi-tutorialnya">Hasilnya: <p><img src="img/file_io_perulangan_run.png" alt="" class="gambar-tutorial"></p></p>
+    <h4 class="judul-tutorial">Menulis ke file</h4>
+    <p class="isi-tutorialnya">
+      python sudah menyediakan fungsi <khususon>write()</khususon> untuk menulis text ke file, <garis>dan seperti yang sudah kita ketahui,<span> ada tiga mode yang digunakan bila ingin menulis file, yaitu: <khususon>w</khususon>, <khususon>a</khususon>, dan <khususon>r+</khususon>
+        <garis>bagaimana cara menggunakan 3 mode tersebut? <garis>mari kita plajari <garis><span style="font-weight: bold; font-size: 20px;">menulis ke file dengan mode "W"</span><garis>silahkan buat file baru bernama <sukron>latihan.py</sukron> dan ikuti kode berikut
+    </p>
+    <pre><code>
+  <komentar># buka file</komentar>
+  f <sintakvar>=</sintakvar><sintakbawaan> open</sintakbawaan>(<string>"file.txt"</string>,<string>"w"</string>)
+  
+  text <sintakvar>= </sintakvar><string>"hello file</string><intiger>\n</intiger><string> dari python"</string>
+  
+  <komentar># menulis ke file</komentar>
+  f.write(text)
+
+  <komentar># menutup file</komentar>
+  f.close()
+    </code></pre>
+    <p class="isi-tutorialnya">jika dijalankan tidak muncul apa-apa...
+      <p><img src="img/file_io_w_run.png" alt="" class="gambar-tutorial"></p>
+    </p>
+    <p class="isi-tutorialnya"> kenapa? <span>karena kita hanya menulis ke file saja dan tidak menampilkan pesan apapun,<span>tapi.. coba buka <khususon>file.txt</khususon> maka akan ada tulisan yang kita tulis tadi
+    <p><img src="img/gambar_file.png" alt="" class="gambar-tutorial"></p></p>
+    <p class="isi-tutorialnya"><span style="font-weight: bold; font-size: 20px;">menulis ke file dengan mode "a"</span><garis>seperti yang sudah kita pahami bahwa mode "a" ini untuk menambahkan tulisan ke file,<span>artinya jika isi file sudah ada maka akan ditambahkan dan tidak diganti<garis>sekarang mari kita latihan... buat 2 buah file baru dalam folder yang sama seperti ini</p>
+    <pre><code>
+  tulis_file.py
+  sata_saya.txt
+    </code></pre>
+    <p class="isi-tutorialnya">silahkan isi file yang bernama <khususon>data_saya.txt</khususon> seperti ini:</p>
+    <pre><code>
+  satu
+  dua
+    </code></pre>
+    <p class="isi-tutorialnya">dan untuk <khususon>file.py</khususon> silakan isi dengan kode berikut ini:</p>
+    <pre><code>
+  f <sintakvar>=</sintakvar><sintakbawaan> open</sintakbawaan>(<string>"file.txt"</string>,<string>"a"</string>)
+
+  text <sintakvar>=</sintakvar> [<string>"</string><intiger>\n</intiger><string>tiga"</string>,<strig>"</strig><intiger>\n</intiger><string>empat"</string>,<string>"</string><intiger>\n</intiger><string>lima"</string>]
+
+  f.writelines(text)
+  f.close()
+    </code></pre>
+    <p class="isi-tutorialnya">perhatikan bahwa fungsi <khususon>writelines()</khususon> untuk menuliskan sebuah list ke file.<garis>sekarang silahkan jalankan
+      <p><img src="img/mode_a.png" alt="" class="gambar-tutorial"></p>
+    </p>
+     <p class="isi-tutorialnya"> seharusnya tidak muncul apa-apa karena kita hanya menulis ke file saja, tapi coba buka file yang bernama <khususon>sata_saya.txt</khususon>
+      <p><img src="img/mode_a_hasil.png" alt="" class="gambar-tutorial"></p>
+    </p>
+    <p class="isi-tutorialnya">maka tulisanya akan ditambahkan dan tidak diganti karena kita menggunakan mode "a" <garis>oke, cukup sekian tentang pembelajaran kali ini, semoga kamu sudah mengerti</p>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

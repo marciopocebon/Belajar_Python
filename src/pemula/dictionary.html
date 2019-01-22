@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
+  <!-- MY CSS -->
+  <link rel="stylesheet" href="../../css/style.css">
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css?family=Ropa+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  <title>python dictionary</title>
+  <!-- syntak -->
+  <link rel="stylesheet" href="/path/to/styles/default.css">
+  <script src="/path/to/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a href="#" class="navbar-brand">Belajar Python</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="../daftar.html" class="nav-link btn btn-outline-primary bad-daftar">kembali ke daftar tutorial</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+  <div class="kolom-tut">
+    <h3 class="judul-tutorial">python dictionary</h3>
+    <p class="isi-tutorialnya">
+      kali ini kita akan belajar dictionary pada python. <span>apa itu dictionary? <garis>dictionary adalah sekumpulan data yang dibungkus dengan kurung kurawal <khususon>{}</khususon> <garis>
+      dictionary sama seperti list, hanya saja dictionary mempunyai kata kunci kemudian ada nilai, <span>kata kunci harus unik sedangkan nilainya boleh di isi dengan apa saja <garis>Contoh:
+      <pre><code>
+  data_saya<sintakvar> = </sintakvar>{
+    <string>"nama"</string>:<string>"muslim ambari"</string>,
+    <string>"umur"</string>:<intiger>18</intiger>
+  }
+      </code></pre>
+      <h4 class="judul-tutorial">Cara membuat dictionary</h4>
+    </p>
+    <p class="isi-tutorialnya">
+      untuk membuat dictionary wajib menggunakan kata kunci yang disebut <khususon>key</khususon> <span>sedangkan isinya disebut <khususon>value</khususon> <garis>membuat dictionary sama seperti membuat variabel
+      <pre><code>
+  nama_variabel<sintakvar> = </sintakvar>{
+    <string>"key1"</string>:<string>"value 1"</string>,
+    <string>"key2"</string>:<string>"value 2"</string>
+  }
+      </code></pre>
+      <h4 class="judul-tutorial">mengakses nilai item dictionary</h4>
+    </p>
+    <p class="isi-tutorialnya">
+      kita sudah paham membuat dictionary, sekarang bagaimana cara mengaksesnya? <garis>cara mengaksesnya sama seperti list, namun kunci yang digunakan bukan angka,<span> melainkan keyword (key) yang sudah kita tentukan. <garis>biar lebih paham mari kita praktekan... <garis>buat file baru bernama <sukron>latihan_dictionary.py</sukron><span>dan ikuti kode berikut
+        <pre><code>
+  <komentar># membuat dictionary</komentar>
+  data_saya <sintakvar>=</sintakvar> {
+    <string>"nama"</string>:<string>"muslim ambari"</string>,
+    <string>"umur"</string>:<intiger>18</intiger>
+  }
+
+  <komentar># mengakses nilai</komentar>
+  <sintakbawaan>print</sintakbawaan> data_saya[<string>"nama"</string>]
+  <sintakbawaan>print</sintakbawaan> data_saya[<string>"umur"</string>]
+        </code></pre>
+    </p>
+    <p class="isi-tutorialnya">Hasilnya
+      <p><img src="img/dictionary_run.png" alt="" class="gambar-tutorial"></p>
+    </p>
+    <p class="isi-tutorialnya">
+      bagaimana kalau datanya ada 100, apakah kita akan menggunakan fungsi print sebanyak 100 kali ? <garis>
+      tinggal menggunakan perulangan for, nanti kita pelajari tentang perulangan(loop) di tutorial <span>
+      selanjutnya, untuk kali ini, abaikan saja dulu,<garis>menampilkan nilai dictionary dengan perulangan for
+        <pre><code>
+  data_saya <sintakvar>=</sintakvar> {
+    <string>"nama"</string>:<string>"muslim ambari"</string>,
+    <string>"umur"</string>:<intiger>18</intiger>
+  }
+
+  <sintakvar>for</sintakvar> key,value <sintakvar>in</sintakvar> data_saya.items():
+    <sintakbawaan>print</sintakbawaan><string> "</string><intiger>{}</intiger><string> :</string> <intiger>{}</intiger><string>"</string>.<sintakbawaan>format</sintakbawaan>(key,value)
+        </code></pre>
+    </p>
+    <p class="isi-tutorialnya">Hasilnya:
+      <p><img src="img/dictionary_for_run.png" alt="" class="gambar-tutorial"></p>
+      <h4 class="judul-tutorial">Menghapus item dictionary</h4>
+    </p>
+    <p class="isi-tutorialnya">untuk menghapus nilai item di dictionary sama seperti menghapus data list yaitu menggunakan fungsi <khususon>del</khususon><garis>
+      Contoh:
+      <pre><code>
+  data_saya <sintakvar>=</sintakvar> {
+    <string>"nama"</string>:<string>"muslim ambari"</string>,
+    <string>"umur"</string>:<intiger>18</intiger>
+  }
+
+  <sintakvar>del</sintakvar> data_saya[<string>"nama"</string>]
+
+  <sintakbawaan>print</sintakbawaan> data_saya
+      </code></pre>
+    </p>
+    <p class="isi-tutorialnya">Hasilnya:
+      <p><img src="img/dictionary_del_run.png" alt="" class="gambar-tutorial"></p>
+    </p>
+    <p class="isi-tutorialnya">key <khususon>nama</khususon> dengan isi valuenya <khususon>muslim ambari</khususon> sudah tidak ada,<garis>kenapa?<garis> karena sudah dihapus menggunakan fungsi <khususon>del</khususon> tadi.</p>
+    <h4 class="judul-tutorial">menambahkan item ke dictionary</h4>
+    <p class="isi-tutorialnya">untuk menambahkan item ke dictionary. kita bisa gunakan fungsi <khususon>update()</khususon>
+      <garis>Contoh:
+        <pre><code>
+  data <sintakvar>=</sintakvar> {
+    <string>"nama"</string>:<string>"muslim ambari"</string>,
+    <string>"umur"</string>:<intiger>18</intiger>
+  }
+
+  <komentar># menampilkan dictionary sebelum ditambahkan</komentar>
+  <sintakbawaan>print</sintakbawaan> data
+
+  <komentar># menambahkan item ke dictionary</komentar>
+  data.update({<string>"wajah"</string>:<string>"tamvan"</string>})
+
+  <komentar># menampilkan dictionary sesudah di tambahkan</komentar>
+  <sintakbawaan>print</sintakbawaan> data
+        </code></pre>
+    </p>
+    <p class="isi-tutorialnya">Hasilnya:
+      <p><img src="img/dictionary_update_run.png" alt="" class="gambar-tutorial"></p>
+    </p>
+    <p class="isi-tutorialnya">lalu jika ingin mengetahui ada berapa jumlah data yg ada di dictionary?<garis>gampang, tinggal gunakan fungsi <khususon>len</khususon><garis>Contoh:
+      <pre><code>
+  data <sintakvar>=</sintakvar> {
+    <string>"nama"</string>:<string>"muslim ambari"</string>,
+    <string>"umur"</string>:<intiger>18</intiger>
+  }
+
+  <sintakbawaan>print len</sintakbawaan>(data)
+      </code></pre>
+    </p>
+    <p class="isi-tutorialnya">Hasilnya:
+      <p><img src="img/dictionary_len_run.png" alt="" class="gambar-tutorial"></p>
+    </p>
+    <p class="isi-tutorialnya">oke, sekian pembelajaran tentang dictionary, semoga udah paham dan silahkan pelajari tuorial selanjutnya <garis>
+      <a href="percabangan_if_else.html" class="btn btn-primary lj">Lanjut</a>
+    </p>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
