@@ -15,8 +15,8 @@ untuk cara penggunaannya mudah kok, cukup ikuti petunjuk dibawah
 
 ```
 1.download file web nya
-2.extrak
-3.buka di browser
+2.extrak file zip nya
+3.buka file 'index.html' di browser
 4.selamat belajar
 ```
 oke, mungkin segitu aja cara penggunaanya, semoga bermanfaat..
