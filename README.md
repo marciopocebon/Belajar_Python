@@ -5,3 +5,4 @@ web simple belajar python berbahasa indonesia, support mobile dan pc, mungkin tu
 
 # Screnshoot
 ![1](https://github.com/Ranginang67/Belajar_Python/blob/master/ex/example.png)
+![2](https://github.com/Ranginang67/Belajar_Python/blob/master/ex/example2.png)
