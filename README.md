@@ -11,7 +11,7 @@ web simple belajar python berbahasa indonesia, support mobile dan pc, mungkin tu
 ![2](https://github.com/Ranginang67/Belajar_Python/blob/master/ex/example2.png)
 
 
-dan untuk cara menggunaannya mudah kok, cukup ikuti petunjuk dibawah
+untuk cara penggunaannya mudah kok, cukup ikuti petunjuk dibawah
 
 ```
 1.download file web nya
