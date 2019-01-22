@@ -19,3 +19,11 @@ dan untuk cara menggunaannya mudah kok, cukup ikuti petunjuk dibawah
 3.buka di browser
 4.selamat belajar
 ```
+oke, mungkin segitu aja cara penggunaanya, semoga bermanfaat..
+dan silahkan subcribe channel yt saya [disini](https://www.youtube.com/channel/UCNMD5U02GFeWLqmrl_XSPGQ) untuk mensupport saya agar bisa terus berkarya dan memberikan yang terbaik untuk kalian semua,
+
+
+
+
+
+<a href="https://t.me/Msambari"><img src="https://img.shields.io/badge/telegram-Ms.ambari-blue.svg">
