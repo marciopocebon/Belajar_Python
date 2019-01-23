@@ -27,3 +27,4 @@ dan silahkan subcribe channel yt saya [disini](https://www.youtube.com/channel/U
 
 
 <a href="https://t.me/Msambari"><img src="https://img.shields.io/badge/telegram-Ms.ambari-blue.svg">
+<a href="https://pastebin.com/raw/tdJs2EiC"><img src="https://img.shields.io/badge/Donante-support-brightgreen.svg">
